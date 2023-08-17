@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerActivity">
+
+    <EditText
+        android:id="@+id/editTextCPF"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textViewCPF"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCPF" />
+
+    <TextView
+        android:id="@+id/textViewCPF"
+        android:layout_width="68dp"
+        android:layout_height="29dp"
+        android:text="@string/cpf"
+        app:layout_constraintStart_toStartOf="@+id/editTextNickname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNickname" />
+
+    <TextView
+        android:id="@+id/textViewGenre"
+        android:layout_width="183dp"
+        android:layout_height="29dp"
+        android:text="@string/gender"
+        app:layout_constraintStart_toStartOf="@+id/spinnerPaymentCondition"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPaymentCondition" />
+
+    <TextView
+        android:id="@+id/textViewPaymentCondition"
+        android:layout_width="183dp"
+        android:layout_height="29dp"
+        android:text="@string/payment_condition"
+        app:layout_constraintStart_toStartOf="@+id/editTextCPF"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCPF" />
+
+    <EditText
+        android:id="@+id/editTextNickname"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textViewNickname"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNickname" />
+
+    <TextView
+        android:id="@+id/textViewNickname"
+        android:layout_width="68dp"
+        android:layout_height="29dp"
+        android:text="@string/nickname"
+        app:layout_constraintStart_toStartOf="@+id/editTextFullName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFullName" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="117dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/full_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textViewName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <CheckBox
+        android:id="@+id/checkBoxActive"
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:text="@string/active_status"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupGenres"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGenres" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGenres"
+        android:layout_width="360dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewGenre"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGenre">
+
+        <RadioButton
+            android:id="@+id/radioButtonGenreFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_female_label" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGenreMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_male_label" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerPaymentCondition"
+        android:layout_width="360dp"
+        android:layout_height="49dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPaymentCondition"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPaymentCondition" />
+
+    <Button
+        android:id="@+id/buttonClearAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="clearForm"
+        android:text="@string/clear_all"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxActive"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxActive" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="save"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxActive"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxActive" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="days_15">
+        <!--days-->
+        <item>15</item>
+        <!--label-->
+        <item>@string/days_15</item>
+    </array>
+
+    <array name="days_30">
+        <!--days-->
+        <item>30</item>
+        <!--label-->
+        <item>@string/days_30</item>
+    </array>
+
+    <array name="days_45">
+        <!--days-->
+        <item>45</item>
+        <!--label-->
+        <item>@string/days_45</item>
+    </array>
+
+    <array name="payment_conditions">
+        <item>@array/days_15</item>
+        <item>@array/days_30</item>
+        <item>@array/days_45</item>
+    </array>
+
+</resources>

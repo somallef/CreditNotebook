@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">CreditNotebook</string>
+    <string name="gender">Gênero</string>
+    <string name="gender_female_label">Feminino</string>
+    <string name="gender_male_label">Masculino</string>
+    <string name="active_status">Ativo</string>
+    <string name="inactive_status">Inativo</string>
+    <string name="cpf">CPF</string>
+    <string name="nickname">Apelido</string>
+    <string name="full_name">Nome completo</string>
+    <string name="payment_condition">Condição de pagamento</string>
+    <string name="clear_all">Limpar tudo</string>
+    <string name="save">Salvar</string>
+    <string name="days_15">15 dias</string>
+    <string name="days_30">30 dias</string>
+    <string name="days_45">45 dias</string>
+    <string name="saved_successfully">Salvo com sucesso</string>
+    <string name="fullname_required">O campo nome é obrigatório!</string>
+    <string name="cpf_required">O campo CPF é obrigatório!</string>
+    <string name="gender_required">Selecione um gênero</string>
+
 </resources>
